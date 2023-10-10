@@ -5,14 +5,20 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
 
-        int conta = input.nextInt();
-        String cliente = input.nextLine();
-        //Double saldo = input.nextDouble();
+        CONTA cc = new CONTA();
+
+        cc.setConta(123);
+        cc.setCliente("kiko");
+        cc.setSaldo(12.56);
 
 
-        CONTA cc = new CONTA(conta, cliente);
+        
 
-        System.out.println(cc);
+        System.out.println(
+            "CONTA: "+cc.getConta()+
+            "\nCLIENTE: "+cc.getCliente()+
+            "\nSALDO: "+cc.getSaldo()
+            );
 
     }
 }

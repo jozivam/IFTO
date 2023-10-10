@@ -3,13 +3,10 @@ package CLASS;
 public class CONTA {
     private int Conta;
     private String Cliente;
+    private Double Saldo;
     
 
-    public CONTA(int Conta, String Cliente) {
-        this.Conta = Conta;
-        this.Cliente = Cliente;
-        
-    }
+    
 
     public int getConta() {
         return this.Conta;
@@ -35,5 +32,8 @@ public class CONTA {
         this.Saldo = Saldo;
     }
 
+    public void extrato(){
+        
+    }
 
 }
