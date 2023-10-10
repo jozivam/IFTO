@@ -3,13 +3,17 @@ import java.util.Scanner;
 import CLASS.*;
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner input = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
 
         CONTA cc = new CONTA();
 
-        cc.setConta(123);
-        cc.setCliente("kiko");
-        cc.setSaldo(12.56);
+       int conta = ler.nextInt();
+       String cliente = ler.nextLine();
+       double saldo = ler.nextDouble();
+
+       cc.setConta(conta);
+       cc.setCliente(cliente);
+       cc.setSaldo(saldo);
 
 
         
@@ -18,7 +22,7 @@ public class App {
             "CONTA: "+cc.getConta()+
             "\nCLIENTE: "+cc.getCliente()+
             "\nSALDO: "+cc.getSaldo()
-            );
+        );
 
     }
 }
